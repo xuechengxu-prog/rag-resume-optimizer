@@ -1,9 +1,51 @@
-streamlit
-langchain
-langchain-community
-chromadb
-PyPDF2
-transformers
-pillow
-reportlab
-python-dotenv
+# 企业级简历优化RAG系统 - 依赖清单
+# 安装方式: pip install -r requirements.txt
+# 建议在虚拟环境中安装: python -m venv venv
+
+# ===== 核心Web框架 =====
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+
+# ===== LangChain生态 =====
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-core>=0.2.0
+langchain-openai>=0.1.0
+langchain-text-splitters>=0.2.0
+
+# ===== 向量数据库 =====
+chromadb>=0.5.0
+
+# ===== Embedding模型 =====
+dashscope>=1.19.0
+
+# ===== 文档解析 =====
+PyPDF2>=3.0.0
+PyMuPDF>=1.24.0
+unstructured[all-docs]>=0.14.0
+python-docx>=1.1.0
+python-pptx>=0.6.23
+pillow>=10.0.0
+
+# ===== OCR（图片解析） =====
+easyocr>=1.7.0
+
+# ===== 检索增强 =====
+rank-bm25>=0.2.2
+numpy>=1.26.0
+scikit-learn>=1.4.0
+
+# ===== 评估工具（可选） =====
+ragas>=0.1.0
+deepeval>=0.21.0
+
+# ===== 工具库 =====
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# ===== 报告生成（保留兼容） =====
+reportlab>=4.0.0
+
+# ===== 数据格式 =====
+pydantic>=2.6.0
